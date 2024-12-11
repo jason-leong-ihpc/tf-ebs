@@ -5,25 +5,20 @@ variable "aws_region" {
 }
 
 variable "name_prefix" {
- description = "Name prefix for application"
- type        = string
- default     = "jason-ce8-2.7"
+  description = "Name prefix for application"
+  type        = string
+  default     = "jason-ce8-2.7"
 }
 
 variable "instance_type" {
- description = "Instance type of ec2"
- type        = string
- default     = "t2.micro"
+  description = "Instance type of ec2"
+  type        = string
+  default     = "t2.micro"
 }
 
 variable "vpc_id" {
- description = "Virtual private cloud id"
- type        = string
- default = "vpc-0488a02e392e3eea1" #shared vpc created for 2.7
+  description = "Virtual private cloud id"
+  type        = string
+  default     = "vpc-0488a02e392e3eea1" #shared vpc created for 2.7
 }
 
-# variable "public_subnet" {
-#  description = "Choice of deploying to public or private subnet"
-#  type        = bool
-#  default     = true
-# }
